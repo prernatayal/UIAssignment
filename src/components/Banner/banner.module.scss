@@ -1,0 +1,73 @@
+@import "../../assests/styles/animation.scss";
+
+
+.main {
+    display: flex;
+    gap: 128px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 108px;
+    animation: bounceIn 1s ease-in-out;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 24px 16px 48px;
+        gap: 24px;
+        text-align: center;
+    }
+}
+
+.heading {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62.4px;
+    animation: slideIn 1s ease-in-out;
+    animation-delay: 2s;
+    @media only screen and (max-width: 768px) {
+        font-size: 32px;
+        line-height: 44.8px;
+        font-family: Helvetica Neue;
+    }
+}
+
+.subheading {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 16px;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 17px;
+        line-height: 25.5px;
+        font-family: Helvetica Neue;
+    }
+}
+
+.button {
+    background-color: #F2707C;
+    outline: none;
+    border: none;
+    padding: 8px 40px;
+    color: white;
+    border-radius: 30px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 8px 37px;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Helvetica Neue;
+    }
+}
+
+.image {
+    @media only screen and (max-width: 768px) {
+        width: 343px;
+        height: 240px;
+    }
+}

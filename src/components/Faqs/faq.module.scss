@@ -1,0 +1,79 @@
+@import "../../assests/styles/animation.scss";
+
+.main {
+    padding: 80px 316px;
+    text-align: center;
+
+    @media only screen and (max-width: 768px) {
+        padding: 48px 24px 42px;
+        text-align: left;
+    }
+}
+
+.heading {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48x;
+
+    &.animation {
+        animation: arcIn 5s ease-in-out;
+    }
+
+    @media only screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.faqs {
+    margin-top: 32px;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 16px;
+    }
+}
+
+.faqSection {
+    cursor: pointer;
+    border-bottom: 1px solid #00000061;
+}
+
+.titleSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0px;
+}
+
+.title {
+    color: #F2707C;
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32x;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+}
+
+.description {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20x;
+    padding-bottom: 16px;
+    text-align: left;
+}
+
+.arrow {
+    width: 32px;
+    height: 32px;
+
+    @media only screen and (max-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
+}

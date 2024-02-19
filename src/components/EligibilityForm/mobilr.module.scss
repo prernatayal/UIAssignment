@@ -1,0 +1,51 @@
+@import "../../assests/styles/animation.scss";
+
+.main {
+    padding: 32px 24px 48px 22px;
+
+    &.animation {
+        animation: puffIn 3s ease-in-out;
+    }
+}
+
+.heading {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.section {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.p {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+.p1 {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.a {
+    color: black;
+    font-family: Helvetica Neue;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    object-fit: contain;
+}

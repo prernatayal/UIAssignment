@@ -1,0 +1,78 @@
+@import "../../assests/styles/animation.scss";
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 108px;
+    background-color: #FFE4E7;
+
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 24px 48px;
+        gap: 16px;
+        background-color: white;
+    }
+}
+
+.rewards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &.animation {
+        animation: glideIn 3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 768px) {
+        order: 2;
+    }
+}
+
+.heading {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60x;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+}
+
+.subheading {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    @media only screen and (max-width: 768px) {
+        font-family: 'Helvetica Neue';
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.slider {
+    @media only screen and (max-width: 768px) {
+        order: 1;
+        background-color: #FFE4E7;
+    }
+}
+
+.image {
+    @media only screen and (max-width: 768px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.sliderImg {
+    @media only screen and (max-width: 768px) {
+        width: 300px;
+        height: 240px;
+    }
+}
